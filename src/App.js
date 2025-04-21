@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation, HashRouter } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Navbar from './components/Navbar';
@@ -51,61 +51,69 @@ function AdminRoute({ children }) {
   return children;
 }
 
-function App() {
+function AppContent() {
   const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
   const userRole = localStorage.getItem('userRole');
 
   return (
+    <div className="App">
+      {isLoggedIn && userRole !== 'admin' && <Navbar />}
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/recover-password" element={<PasswordRecovery />} />
+        <Route
+          path="/admin"
+          element={
+            <AdminRoute>
+              <AdminDashboard />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/network"
+          element={
+            <PrivateRoute>
+              <Network />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/commissions"
+          element={
+            <PrivateRoute>
+              <Commissions />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
+    </div>
+  );
+}
+
+function App() {
+  return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <div className="App">
-        {isLoggedIn && userRole !== 'admin' && <Navbar />}
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/recover-password" element={<PasswordRecovery />} />
-          <Route
-            path="/admin"
-            element={
-              <AdminRoute>
-                <AdminDashboard />
-              </AdminRoute>
-            }
-          />
-          <Route
-            path="/"
-            element={
-              <PrivateRoute>
-                <Dashboard />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/network"
-            element={
-              <PrivateRoute>
-                <Network />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/profile"
-            element={
-              <PrivateRoute>
-                <Profile />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/commissions"
-            element={
-              <PrivateRoute>
-                <Commissions />
-              </PrivateRoute>
-            }
-          />
-        </Routes>
-      </div>
+      <HashRouter>
+        <AppContent />
+      </HashRouter>
     </ThemeProvider>
   );
 }
