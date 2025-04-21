@@ -1,13 +1,42 @@
 {
   "files": {
-    "main.css": "/mlm-app/static/css/main.55d5a88c.css",
-    "main.js": "/mlm-app/static/js/main.c38d0aa1.js",
-    "index.html": "/mlm-app/index.html",
-    "main.55d5a88c.css.map": "/mlm-app/static/css/main.55d5a88c.css.map",
-    "main.c38d0aa1.js.map": "/mlm-app/static/js/main.c38d0aa1.js.map"
+    "main.css": "/mlm-app/static/css/main.a0713dba.css",
+    "main.js": "/mlm-app/static/js/main.cdd401b6.js",
+    "static/js/648.0d478ba2.chunk.js": "/mlm-app/static/js/648.0d478ba2.chunk.js",
+    "static/js/879.f2d5447b.chunk.js": "/mlm-app/static/js/879.f2d5447b.chunk.js",
+    "static/js/211.55edaa2e.chunk.js": "/mlm-app/static/js/211.55edaa2e.chunk.js",
+    "static/js/163.4bb64505.chunk.js": "/mlm-app/static/js/163.4bb64505.chunk.js",
+    "static/js/703.0ed3fc63.chunk.js": "/mlm-app/static/js/703.0ed3fc63.chunk.js",
+    "static/js/609.341b3dfa.chunk.js": "/mlm-app/static/js/609.341b3dfa.chunk.js",
+    "static/js/996.12bcbd7f.chunk.js": "/mlm-app/static/js/996.12bcbd7f.chunk.js",
+    "static/js/829.a5db05b0.chunk.js": "/mlm-app/static/js/829.a5db05b0.chunk.js",
+    "static/js/672.078712c2.chunk.js": "/mlm-app/static/js/672.078712c2.chunk.js",
+    "static/js/719.383eaffc.chunk.js": "/mlm-app/static/js/719.383eaffc.chunk.js",
+    "static/js/103.7a7eaaf5.chunk.js": "/mlm-app/static/js/103.7a7eaaf5.chunk.js",
+    "static/js/899.41f171bd.chunk.js": "/mlm-app/static/js/899.41f171bd.chunk.js",
+    "static/js/779.574bdd59.chunk.js": "/mlm-app/static/js/779.574bdd59.chunk.js",
+    "static/js/162.57df996c.chunk.js": "/mlm-app/static/js/162.57df996c.chunk.js",
+    "static/js/33.d6de3dc7.chunk.js": "/mlm-app/static/js/33.d6de3dc7.chunk.js",
+    "static/js/582.afa0e87e.js": "/mlm-app/static/js/582.afa0e87e.js",
+    "static/js/946.9f09e80d.chunk.js": "/mlm-app/static/js/946.9f09e80d.chunk.js",
+    "static/js/823.3699c86d.chunk.js": "/mlm-app/static/js/823.3699c86d.chunk.js",
+    "static/js/281.08540529.js": "/mlm-app/static/js/281.08540529.js",
+    "static/js/851.f2e75a28.js": "/mlm-app/static/js/851.f2e75a28.js",
+    "static/js/768.bc7602d0.js": "/mlm-app/static/js/768.bc7602d0.js",
+    "static/js/67.d74dfe17.js": "/mlm-app/static/js/67.d74dfe17.js",
+    "static/js/23.56d8c38c.js": "/mlm-app/static/js/23.56d8c38c.js",
+    "static/js/585.33982434.js": "/mlm-app/static/js/585.33982434.js",
+    "index.html": "/mlm-app/index.html"
   },
   "entrypoints": [
-    "static/css/main.55d5a88c.css",
-    "static/js/main.c38d0aa1.js"
+    "static/js/281.08540529.js",
+    "static/js/851.f2e75a28.js",
+    "static/js/768.bc7602d0.js",
+    "static/js/67.d74dfe17.js",
+    "static/js/23.56d8c38c.js",
+    "static/js/585.33982434.js",
+    "static/js/582.afa0e87e.js",
+    "static/css/main.a0713dba.css",
+    "static/js/main.cdd401b6.js"
   ]
 }
